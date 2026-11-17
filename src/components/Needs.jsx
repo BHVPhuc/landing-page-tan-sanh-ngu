@@ -62,7 +62,7 @@ const courses = [
       "Cải thiện tốc độ và độ chính xác",
       "Phát triển khả năng tự học hiệu quả",
     ],
-    duration: "Đang cập nhật",
+    duration: "Thời lượng: Bổ sung sau",
     audience: "Học viên đạt IELTS 5.5+ hoặc vượt qua bài kiểm tra đầu vào",
     outcome: "IELTS Overall 6.5+",
     cta: "Tư vấn khóa IELTS",
