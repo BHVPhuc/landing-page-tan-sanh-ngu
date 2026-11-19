@@ -62,6 +62,16 @@ const scheduleData = [
     days: "Thứ 2 / 4 / 6",
     time: "18:30 - 20:00 (Online)",
   },
+    {
+    id: 6,
+    program: "GIAO TIẾP",
+    level: "Tiếng Anh Giao Tiếp Cơ Bản (Khóa K18)",
+    startDate: "02/11/2026",
+    status: "ĐÃ KHAI GIẢNG",
+    isFull: true,
+    days: "Thứ 2 / 4 / 6",
+    time: "18:30 - 20:00 (Online)",
+  },
 ];
 
 const programConfig = {
