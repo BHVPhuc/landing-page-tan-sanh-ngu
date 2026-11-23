@@ -63,8 +63,8 @@ const courses = [
             "Phát triển khả năng tự học hiệu quả",
         ],
         duration: "Thời lượng: Bổ sung sau",
-        audience: "Học viên đạt IELTS 5.5+ hoặc vượt qua bài kiểm tra đầu vào",
-        outcome: "IELTS Overall 6.5+",
+        audience: "Đối tượng: Học viên đạt IELTS 5.5+ hoặc vượt qua bài kiểm tra đầu vào",
+        outcome: "Mục tiêu: IELTS Overall 6.5+",
         cta: "Tư vấn khóa IELTS",
         image: "/assets/dangcapnhan.png",
         href: "#tu-van",
@@ -150,6 +150,19 @@ const courses = [
     },
 ];
 
+function renderInfoWithUnderline(text) {
+    const colonIndex = text.indexOf(":");
+    if (colonIndex === -1) return text;
+    const label = text.slice(0, colonIndex + 1);
+    const value = text.slice(colonIndex + 1);
+    return (
+        <>
+            <span className="underline underline-offset-4">{label}</span>
+            {value}
+        </>
+    );
+}
+
 function CourseCard({ item, onNavigateToSchedule }) {
     const handleViewSchedule = () => {
         if (onNavigateToSchedule) {
@@ -232,21 +245,21 @@ function CourseCard({ item, onNavigateToSchedule }) {
                         <div className="flex items-start gap-2.5">
                             <MdCalendarMonth className="mt-0.5 shrink-0 text-[21px] text-primary" />
                             <p className="text-[14px] leading-[1.5] text-[#475467]">
-                                {item.duration}
+                                {renderInfoWithUnderline(item.duration)}
                             </p>
                         </div>
 
                         <div className="flex items-start gap-2.5">
                             <MdOutlinePerson className="mt-0.5 shrink-0 text-[21px] text-primary" />
                             <p className="text-[14px] leading-[1.5] text-[#475467]">
-                                {item.audience}
+                                {renderInfoWithUnderline(item.audience)}
                             </p>
                         </div>
 
                         <div className="flex items-start gap-2.5">
                             <MdTrackChanges className="mt-0.5 shrink-0 text-[21px] text-primary" />
                             <p className="text-[14px] leading-[1.5] text-[#475467]">
-                                {item.outcome}
+                                {renderInfoWithUnderline(item.outcome)}
                             </p>
                         </div>
                     </div>
