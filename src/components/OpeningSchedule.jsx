@@ -15,7 +15,7 @@ const scheduleData = [
   {
     id: 1,
     program: "IELTS",
-    level: "IELTS Foundation",
+    level: "IELTS Foundation (Aim 4.5+)",
     startDate: "07/12/2026",
     status: "ĐANG TUYỂN",
     isFull: false,
@@ -25,7 +25,7 @@ const scheduleData = [
   {
     id: 2,
     program: "IELTS",
-    level: "IELTS Foundation",
+    level: "IELTS Foundation (Aim 4.5+)",
     startDate: "14/12/2026",
     status: "ĐANG TUYỂN",
     isFull: false,
@@ -35,7 +35,7 @@ const scheduleData = [
   {
     id: 3,
     program: "TOEIC",
-    level: "TOEIC Foundation",
+    level: "TOEIC Foundation (Aim 450+)",
     startDate: "14/12/2026",
     status: "ĐANG TUYỂN",
     isFull: false,
@@ -45,7 +45,7 @@ const scheduleData = [
   {
     id: 4,
     program: "TOEIC",
-    level: "TOEIC Foundation",
+    level: "TOEIC Foundation (Aim 450+)",
     startDate: "14/12/2026",
     status: "ĐANG TUYỂN",
     isFull: false,
