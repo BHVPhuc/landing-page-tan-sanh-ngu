@@ -150,19 +150,6 @@ const courses = [
     },
 ];
 
-function renderInfoWithUnderline(text) {
-    const colonIndex = text.indexOf(":");
-    if (colonIndex === -1) return text;
-    const label = text.slice(0, colonIndex + 1);
-    const value = text.slice(colonIndex + 1);
-    return (
-        <>
-            <span className="underline underline-offset-4">{label}</span>
-            {value}
-        </>
-    );
-}
-
 function CourseCard({ item, onNavigateToSchedule }) {
     const handleViewSchedule = () => {
         if (onNavigateToSchedule) {
@@ -245,21 +232,21 @@ function CourseCard({ item, onNavigateToSchedule }) {
                         <div className="flex items-start gap-2.5">
                             <MdCalendarMonth className="mt-0.5 shrink-0 text-[21px] text-primary" />
                             <p className="text-[14px] leading-[1.5] text-[#475467]">
-                                {renderInfoWithUnderline(item.duration)}
+                                {item.duration}
                             </p>
                         </div>
 
                         <div className="flex items-start gap-2.5">
                             <MdOutlinePerson className="mt-0.5 shrink-0 text-[21px] text-primary" />
                             <p className="text-[14px] leading-[1.5] text-[#475467]">
-                                {renderInfoWithUnderline(item.audience)}
+                                {item.audience}
                             </p>
                         </div>
 
                         <div className="flex items-start gap-2.5">
                             <MdTrackChanges className="mt-0.5 shrink-0 text-[21px] text-primary" />
                             <p className="text-[14px] leading-[1.5] text-[#475467]">
-                                {renderInfoWithUnderline(item.outcome)}
+                                {item.outcome}
                             </p>
                         </div>
                     </div>
